@@ -1,0 +1,43 @@
+﻿
+#ad {
+    width: 30%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+    #ad:before,
+    #ad:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 50%;
+        height: 1px;
+        content: "\a0";
+        background-color: gainsboro;
+    }
+
+    #ad:before {
+        margin-left: -50%;
+        text-align: right;
+    }
+
+#color {
+    background-color: #ccc;
+}
+
+.onhover::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.onhover:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}

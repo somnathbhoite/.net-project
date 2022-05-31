@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="eliteRealty1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>eliteRealty</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="Home.aspx">eliteRealty</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.aspx">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.aspx">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.aspx">contactUs</a>
+              </li>
+            </ul>
+          </div>
+
+            <a href="login.aspx"
+              role="button"
+              class="btn btn-outline-light rounded-pill mr-4"
+            >
+              Login
+            </a>
+           <a href="Register.aspx"
+              role="button"
+              class="btn btn-outline-light rounded-pill mr-4"
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <footer class="bg-dark text-white text-center text-md-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="my-2">eliteRealty</h5>
+
+              <p class="text-muted my-2">
+                Elite Realty is a new home rental platform that makes it easier
+                to find your new home without paying any brokerage. Use our
+                verified listing to ensure you find your dream home by
+                contacting the owners directly. Presently, we are available only
+                on selected cities of MAHARASHTRA . In case you cannot find a
+                property you are looking for, please post a requirement and
+                we'll send you email notification with properties matching your
+                requirements.
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="">Locations</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li class="my-2">
+                  <span class="text-muted">Pune</span>
+                </li>
+                <li class="my-2">
+                  <span class="text-muted">Mumbai</span>
+                </li>
+                <li class="my-2">
+                  <span class="text-muted">Nashik</span>
+                </li>
+                <li class="my-2">
+                  <span class="text-muted">Nagpur</span>
+                </li>
+                <li class="my-2">
+                  <span class="text-muted">Aurangabad</span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="mb-0">Links</h5>
+
+              <ul class="list-unstyled">
+                <li class="my-2">
+                  <a href="..." class="text-muted">Home</a>
+                </li>
+                <li class="my-2">
+                  <a href="..." class="text-muted">About</a>
+                </li>
+                <li class="my-2">
+                  <a href="..." class="text-muted">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="mb-0">Follow Us On</h5>
+
+              <ul class="list-unstyled">
+                <li class="my-2">
+                  <a class="text-muted" href="https://www.instagram.com/">
+                    <img src="images/instagram.png" width="25"
+                  /></a>
+                  <span class="text-muted ml-1">Instagram</span>
+                </li>
+                <li class="my-2">
+                  <a class="text-muted" href="https://www.facebook.com/">
+                    <img src="images/fb.png" width="25"
+                  /></a>
+                  <span class="text-muted ml-1">Facebook</span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-muted p-3">
+          © 2021 Copyright:
+          <a class="text-muted" href="...">eliteRealty.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+</body>
+</html>
